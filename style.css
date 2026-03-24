@@ -139,6 +139,36 @@ body {
     padding: 4rem 0;
     border-bottom: 1px solid var(--border-color);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image-wrapper {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    filter: grayscale(0.15) contrast(1.1);
+    transform: scale(1.15);
+    transform-origin: right center;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.hero-image:hover {
+    filter: grayscale(0) contrast(1.1);
+    transform: scale(1.15) translateY(-5px);
 }
 
 .stats-grid {
@@ -625,6 +655,27 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abstract-text {
+        text-align: left;
+    }
+
+    .hero .mono-label {
+        justify-content: center;
+    }
 
     .project-card,
     .project-card.reverse {
