@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio | Ryan Rony</title>
+    <!-- Fonts from V1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="coordinate-tooltip">x: 0, y: 0</div>
+
+    <div class="background-grid"></div>
+
+    <nav class="top-nav">
+        <div class="nav-brand">RYAN.DAT // RYAN RONY</div>
+        <div class="nav-links">
+            <a href="#about">01. OBSERVATION</a>
+            <a href="#projects">02. ANALYSIS</a>
+            <a href="#education">03. ARCHIVE</a>
+            <a href="#contact">04. CONCLUSION</a>
+        </div>
+    </nav>
+
+    <div class="dead-space" style="height: 10vh;"></div>
+
+    <main class="document">
+        <!-- V1 Hero Layout -->
+        <header class="hero" id="about">
+            <div class="hero-content">
+                <p class="mono-label">MUMBAI, MAHARASHTRA | DATA SCIENTIST</p>
+                <h1 class="dramatic-title">Ryan Rony. <br> Torture the Data Long enough it will confess to anything .
+                </h1>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-value" data-target="7.59" data-suffix="" data-prefix="">IITM</span>
+                        <span class="stat-label">BSc DATA SCIENCE (CGPA)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value" data-target="9.02" data-suffix="" data-prefix="">LPU</span>
+                        <span class="stat-label">BTech CSE (CGPA)</span>
+                    </div>
+                </div>
+
+                <div class="abstract-text">
+                    <p><strong>Abstract:</strong> I am a Data Scientist proficient in Python, R, and Java. My research
+                        focuses on Machine Learning, Deep Learning, and Statistical Modeling. I derive actionable
+                        insights from complex datasets and build predictive logic to organize chaos.</p>
+                </div>
+                <br>
+                <div class="mono-label" style="display:flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+                    <a href="mailto:ryanrony2005@gmail.com" class="view-link">ryanrony2005@gmail.com</a>
+                    <a href="https://linkedin.com/in/ryanrony" class="view-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/rock-debug" class="view-link" target="_blank">GitHub</a>
+                    <a href="Ryan_Rony_Resume.pdf" class="resume-btn" download>[ ↓ DOWNLOAD RESUME ]</a>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <div class="dead-space" style="height: 20vh;"></div>
+
+    <main class="document">
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 1. ORIGIN STORY</div>
+            <div class="line"></div>
+        </section>
+        <h2 class="dramatic-title" style="text-align: center; margin-bottom: 0;">How I fell in love with Data Science.</h2>
+    </main>
+
+    <div class="dead-space" style="height: 10vh;"></div>
+
+    <!-- 3D Cinematic Timeline -->
+    <div class="map-section-wrapper" id="map-trigger">
+        <div class="sticky-map">
+            <div class="map-canvas" id="map-canvas">
+                <div class="geo-grid"></div>
+            </div>
+            <!-- 4 Basketballs — one fires per hoop -->
+            <div class="basketball" id="ball-0"></div>
+            <div class="basketball" id="ball-1"></div>
+            <div class="basketball" id="ball-2"></div>
+            <div class="basketball" id="ball-3"></div>
+
+            <!-- Stop-motion jumpshot figure -->
+            <div class="jumpshot-figure" id="jumpshot">
+                <img class="jump-frame active" src="jumpshotpt1-removebg-preview.png" alt="Jump 1" data-frame="0">
+                <img class="jump-frame" src="jumpshotpt2-removebg-preview.png" alt="Jump 2" data-frame="1">
+                <img class="jump-frame" src="jumpshotpt3-removebg-preview.png" alt="Jump 3" data-frame="2">
+                <img class="jump-frame" src="jumpshotpt4-removebg-preview.png" alt="Jump 4" data-frame="3">
+            </div>
+
+            <div class="timeline-3d-container">
+
+                <!-- Hoop 1 -->
+                <div class="backboard-wrap left" data-threshold="0.10" data-ball="0">
+                    <div class="backboard">
+                        <div class="backboard-inner">
+                            <p class="mono-label">THE SPARK // 2018</p>
+                            <h3>Beyond the Box Score</h3>
+                            <p>It started with basketball. Wondering why certain heavily-contested shots were taken and questioning the "eye test". I began tracking possession data to find patterns disguised as chaos.</p>
+                        </div>
+                    </div>
+                    <div class="hoop-pole"></div>
+                    <div class="hoop-assembly">
+                        <div class="hoop-ring"></div>
+                        <svg class="hoop-net" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="0" x2="5"  y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="23" y1="0" x2="20" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="36" y1="0" x2="35" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="49" y1="0" x2="50" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="62" y1="0" x2="60" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="70" y1="0" x2="75" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="10" y1="12" x2="70" y2="12" stroke="#888" stroke-width="1"   opacity="0.4"/>
+                            <line x1="8"  y1="26" x2="72" y2="26" stroke="#888" stroke-width="1"   opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Hoop 2 -->
+                <div class="backboard-wrap left" data-threshold="0.35" data-ball="1">
+                    <div class="backboard">
+                        <div class="backboard-inner">
+                            <p class="mono-label">THE MEASUREMENT // 2020</p>
+                            <h3>Physics in Motion</h3>
+                            <p>Baseball's discrete nature made it perfect for analysis. Discovering MLB Statcast opened my eyes to spin rates, launch angles, and the pure physics mapped to data.</p>
+                        </div>
+                    </div>
+                    <div class="hoop-pole"></div>
+                    <div class="hoop-assembly">
+                        <div class="hoop-ring"></div>
+                        <svg class="hoop-net" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="0" x2="5"  y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="23" y1="0" x2="20" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="36" y1="0" x2="35" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="49" y1="0" x2="50" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="62" y1="0" x2="60" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="70" y1="0" x2="75" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="10" y1="12" x2="70" y2="12" stroke="#888" stroke-width="1"   opacity="0.4"/>
+                            <line x1="8"  y1="26" x2="72" y2="26" stroke="#888" stroke-width="1"   opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Hoop 3 -->
+                <div class="backboard-wrap left" data-threshold="0.60" data-ball="2">
+                    <div class="backboard">
+                        <div class="backboard-inner">
+                            <p class="mono-label">THE ALGORITHM // 2022</p>
+                            <h3>Clustering the Chaos</h3>
+                            <p>Learned Python to scale my curiosity. Ran K-Means on 218K+ NBA shots, replacing standard positions with 12 distinct spatial archetypes. The data told a story the broadcast missed.</p>
+                        </div>
+                    </div>
+                    <div class="hoop-pole"></div>
+                    <div class="hoop-assembly">
+                        <div class="hoop-ring"></div>
+                        <svg class="hoop-net" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="0" x2="5"  y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="23" y1="0" x2="20" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="36" y1="0" x2="35" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="49" y1="0" x2="50" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="62" y1="0" x2="60" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="70" y1="0" x2="75" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="10" y1="12" x2="70" y2="12" stroke="#888" stroke-width="1"   opacity="0.4"/>
+                            <line x1="8"  y1="26" x2="72" y2="26" stroke="#888" stroke-width="1"   opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Hoop 4 -->
+                <div class="backboard-wrap left" data-threshold="0.85" data-ball="3">
+                    <div class="backboard">
+                        <div class="backboard-inner">
+                            <p class="mono-label">THE SYNTHESIS // PRESENT</p>
+                            <h3>Sport Science & ML</h3>
+                            <p>Now, I treat the field as a dynamic system. Applying machine learning to player tracking data, predicting outcomes, and uncovering the unseen edges in athletic performance.</p>
+                        </div>
+                    </div>
+                    <div class="hoop-pole"></div>
+                    <div class="hoop-assembly">
+                        <div class="hoop-ring"></div>
+                        <svg class="hoop-net" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="0" x2="5"  y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="23" y1="0" x2="20" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="36" y1="0" x2="35" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="49" y1="0" x2="50" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="62" y1="0" x2="60" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="70" y1="0" x2="75" y2="40" stroke="#888" stroke-width="1.2" opacity="0.6"/>
+                            <line x1="10" y1="12" x2="70" y2="12" stroke="#888" stroke-width="1"   opacity="0.4"/>
+                            <line x1="8"  y1="26" x2="72" y2="26" stroke="#888" stroke-width="1"   opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Long height to force scrolling -->
+        <div class="scroll-track"></div>
+    </div>
+
+    <div class="dead-space" style="height: 30vh;"></div>
+
+    <main class="document">
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 2. EMPIRICAL EVIDENCE (Projects)</div>
+            <div class="line"></div>
+        </section>
+
+        <!-- V1 Projects with dramatic styling -->
+        <section class="projects" id="projects">
+            <div class="project-card">
+                <div class="project-graph blue-graph">
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 90%; background: var(--data-red);"></div>
+                    <div class="bar" style="height: 60%"></div>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">NBA Player Analytics</h2>
+                    <p class="mono-label">N=218K SHOTS | CLASSIFICATION: 12 ARCHETYPES</p>
+                    <p class="project-desc">Developed a full-stack platform analyzing 218K+ shots via K-Means clustering
+                        and statistical modeling. Built with Python, Next.js, TypeScript, and SQL to classify 994
+                        players into archetypes for responsive real-time analytics.</p>
+                    <a href="https://github.com/rock-debug" class="view-link">[ VIEW GITHUB ]</a>
+                </div>
+            </div>
+
+            <div class="dead-space" style="height: 20vh;"></div>
+
+            <div class="project-card reverse">
+                <div class="project-info">
+                    <h2 class="project-title">AI-Based Journal Tracker</h2>
+                    <p class="mono-label">100+ PAPERS | NLP & CITATION TRACKING</p>
+                    <p class="project-desc">Engineered an AI-based research management system leveraging NLP
+                        classification, summarization, and similarity ranking. Automated the organization and citation
+                        tracking of over 100 papers, immensely improving literature review efficiency.</p>
+                    <a href="https://github.com/rock-debug" class="view-link">[ VIEW GITHUB ]</a>
+                </div>
+                <div class="project-graph red-graph">
+                    <svg viewBox="0 0 100 50" class="line-chart">
+                        <polyline fill="none" stroke="var(--data-blue)" stroke-width="2"
+                            points="0,40 20,35 40,45 60,20 80,25 100,5" />
+                        <circle cx="100" cy="5" r="3" fill="var(--data-red)" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="dead-space" style="height: 20vh;"></div>
+
+            <div class="project-card">
+                <div class="project-graph blue-graph">
+                    <div class="bar" style="height: 30%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 80%"></div>
+                    <div class="bar" style="height: 60%"></div>
+                    <div class="bar" style="height: 100%; background: var(--data-red);"></div>
+                    <div class="bar" style="height: 40%"></div>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">MLB Statcast Power BI Analytics</h2>
+                    <p class="mono-label">PITCH-BY-PITCH DATA | DAX & STAR_SCHEMA</p>
+                    <p class="project-desc">Engineered a complete Power BI analytics solution using pybaseball to
+                        process the 2025 MLB season. Designed a scalable Star Schema, custom dimensions, and advanced
+                        DAX measures to deliver actionable insights on swing decisions, pitch mix, and matchup
+                        evaluations.</p>
+                    <a href="mlb.html" class="view-link">[ LAUNCH INTERACTIVE VIEW ]</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="dead-space" style="height: 30vh;"></div>
+
+        <!-- Coding Arena Section -->
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 3. CODING ARENA</div>
+            <div class="line"></div>
+        </section>
+
+        <div class="coding-arena">
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/rock17/" target="_blank" class="coding-card leetcode-card">
+                <div class="coding-card-header">
+                    <svg class="platform-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.396c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.396a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.7a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                    <span class="platform-name">LeetCode</span>
+                    <span class="platform-handle">@rock17</span>
+                </div>
+                <div class="coding-stats">
+                    <div class="coding-stat-main">
+                        <span class="coding-stat-big">176</span>
+                        <span class="coding-stat-sub">Problems Solved</span>
+                    </div>
+                    <div class="coding-stat-breakdown">
+                        <div class="diff-pill easy">Easy <strong>105</strong></div>
+                        <div class="diff-pill medium">Medium <strong>68</strong></div>
+                        <div class="diff-pill hard">Hard <strong>3</strong></div>
+                    </div>
+                </div>
+                <div class="coding-footer">
+                    <span>🔥 Max Streak <strong>20</strong></span>
+                    <span>📅 Active Days <strong>52</strong></span>
+                    <span>Rank <strong>#865K</strong></span>
+                </div>
+            </a>
+
+            <!-- GeeksForGeeks -->
+            <a href="https://www.geeksforgeeks.org/profile/rockdebug" target="_blank" class="coding-card gfg-card">
+                <div class="coding-card-header">
+                    <svg class="platform-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.79 3.79 0 0 1-1.108-.71 3.555 3.555 0 0 1-.79-1.135H12.1v-1.77h2.347v-.786H12.1V11.3h2.347v-.772H12.1V8.408h2.667c.2-.418.47-.8.8-1.12a3.732 3.732 0 0 1 1.105-.73 4.493 4.493 0 0 1 3.095-.027c.39.145.75.354 1.065.617l-1.02 1.498a2.155 2.155 0 0 0-.62-.36 2.345 2.345 0 0 0-.607-.141 2.198 2.198 0 0 0-.65.022 1.978 1.978 0 0 0-.62.234 2.041 2.041 0 0 0-.496.41c-.14.162-.252.344-.33.54h3.235v1.032h-3.48v.793h3.48v.776H18.7a2.07 2.07 0 0 0 .688 1.017c.16.136.34.247.535.33.21.087.433.131.658.132.217-.004.43-.05.63-.138.207-.092.393-.226.547-.39l1.022 1.498-.33.26zM0 7.5h5v.65L1.738 11.35H5V12H0v-.65l3.262-3.2H0V7.5zm7 0h5v.65l-3.262 3.2H12V12H7v-.65l3.262-3.2H7V7.5z"/></svg>
+                    <span class="platform-name">GeeksForGeeks</span>
+                    <span class="platform-handle">@rockdebug</span>
+                </div>
+                <div class="coding-stats">
+                    <div class="coding-stat-main">
+                        <span class="coding-stat-big">28</span>
+                        <span class="coding-stat-sub">Problems Solved</span>
+                    </div>
+                    <div class="coding-stat-breakdown" style="justify-content:center; gap: 1.5rem;">
+                        <div class="diff-pill easy">Score <strong>81</strong></div>
+                        <div class="diff-pill medium">Submissions <strong>36</strong></div>
+                    </div>
+                </div>
+                <div class="coding-footer">
+                    <span>🏛️ Institute Rank <strong>#9,739</strong></span>
+                    <span>University <strong>LPU</strong></span>
+                </div>
+            </a>
+
+            <!-- HackerRank -->
+            <a href="https://www.hackerrank.com/profile/ryanrony2005" target="_blank" class="coding-card hr-card">
+                <div class="coding-card-header">
+                    <svg class="platform-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24C10.715 24 2.25 19.114 1.608 18 .963 16.886.963 7.116 1.608 6 2.252 4.886 10.715 0 12 0zm2.205 6.815c-.29 0-.428.19-.428.38v1.714c0 .2-.095.298-.298.298H10.52c-.2 0-.298-.095-.298-.298V7.195c0-.225-.1-.38-.42-.38h-1.59c-.284 0-.428.155-.428.38v9.308c0 .22.144.38.428.38h1.59c.32 0 .42-.16.42-.38v-2.86c0-.2.098-.298.298-.298h2.96c.2 0 .298.098.298.298v2.86c0 .22.138.38.428.38h1.59c.284 0 .428-.16.428-.38V7.195c0-.226-.144-.38-.428-.38h-1.59z"/></svg>
+                    <span class="platform-name">HackerRank</span>
+                    <span class="platform-handle">@ryanrony2005</span>
+                </div>
+                <div class="coding-stats">
+                    <div class="coding-stat-main">
+                        <div class="star-grid">
+                            <div class="star-row"><span class="star-label">Problem Solving</span><span class="stars">★★★☆☆</span></div>
+                            <div class="star-row"><span class="star-label">Python</span><span class="stars">★★★★☆</span></div>
+                            <div class="star-row"><span class="star-label">SQL</span><span class="stars">★☆☆☆☆</span></div>
+                            <div class="star-row"><span class="star-label">C Language</span><span class="stars">★☆☆☆☆</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coding-footer">
+                    <span>⚡ 4★ Python Track</span>
+                    <span>🧩 3★ Problem Solving</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="dead-space" style="height: 30vh;"></div>
+
+        <section class="section-divider" id="education">
+            <div class="line"></div>
+            <div class="section-label">FIG 4. ACADEMIC ARCHIVE &amp; SKILLSET</div>
+            <div class="line"></div>
+        </section>
+
+        <section class="projects" style="gap: 5rem;">
+            <div class="abstract-text" style="max-width: 100%;">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Education Matrix</h3>
+                <ul style="list-style: none; font-family: var(--font-mono); font-size: 0.9rem; line-height: 2.2;">
+                    <li><strong>BTech CSE</strong>, Lovely Professional University (2023 - Present) | CGPA: 9.00</li>
+                    <li><strong>BSc Data Science & CSE</strong>, IIT Madras (2023 - Present) | CGPA: 7.59</li>
+                    <li><strong>12th Grade</strong>, Arya Gurukul Junior College (2023) | 66.0%</li>
+                    <li><strong>10th Grade</strong>, Smt Sulochanadevi Singhania School (2021) | 94.60%</li>
+                </ul>
+            </div>
+
+            <div class="abstract-text" style="max-width: 100%; border-left-color: var(--data-blue);">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Technical Lexicon</h3>
+                
+                <div class="lexicon-grid">
+                    <div class="skill-category-label">LANGUAGES</div>
+                    
+                    <div class="skill-card" data-skill="Python">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="python.png" alt="Python">
+                            </div>
+                            <div class="skill-card-back">PYTHON</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="R">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="R.png" alt="R">
+                            </div>
+                            <div class="skill-card-back">R LANGUAGE</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="Java">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="java.png" alt="Java">
+                            </div>
+                            <div class="skill-card-back">JAVA</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="C++">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="c++.png" alt="C++">
+                            </div>
+                            <div class="skill-card-back">C++</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-label">FRAMEWORKS</div>
+
+                    <div class="skill-card" data-skill="NumPy">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="numpy.png" alt="NumPy">
+                            </div>
+                            <div class="skill-card-back">NUMPY</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="Pandas">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="pandas.png" alt="Pandas">
+                            </div>
+                            <div class="skill-card-back">PANDAS</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="Scikit-learn">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="scikitlearn.png" alt="Scikit-learn">
+                            </div>
+                            <div class="skill-card-back">SCIKIT-LEARN</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="TensorFlow">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="TensorFlow.png" alt="TensorFlow">
+                            </div>
+                            <div class="skill-card-back">TENSORFLOW</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-label">DOMAIN EXPERTISE</div>
+
+                    <div class="skill-card" data-skill="ML">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="machinelearning.png" alt="Machine Learning">
+                            </div>
+                            <div class="skill-card-back">MACHINE LEARNING</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="DL">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="deeplearning.png" alt="Deep Learning">
+                            </div>
+                            <div class="skill-card-back">DEEP LEARNING</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="Stats">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="modelling.png" alt="Statistical Modeling">
+                            </div>
+                            <div class="skill-card-back">STATISTICAL MODELING</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-skill="EDA">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            </div>
+                            <div class="skill-card-back">EDA</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="abstract-text" style="max-width: 100%; border-left-color: var(--text-muted);">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Certifications & Training</h3>
+                <ul style="list-style: none; font-family: var(--font-mono); font-size: 0.9rem; line-height: 2.2;">
+                    <li><strong>LPU PETV51 Summer Training</strong> (Jul 2025): Developed EduPulse analytics system
+                        using Java, Swing, JSON.</li>
+                    <li><strong>CSE Pathshala AI/ML</strong> (Mar 2024): 25-hour live training in ML workflows with
+                        Pandas & Scikit-learn.</li>
+                    <li><strong>Coursera:</strong> Network Communications (Sep 2024)</li>
+                    <li><strong>IITM:</strong> CODE foundation level (Aug 2024)</li>
+                    <li><strong>Udemy:</strong> Data Mining with R (Feb 2024)</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="dead-space" style="height: 30vh;"></div>
+
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 5. PING PROTOCOL</div>
+            <div class="line"></div>
+        </section>
+
+        <footer class="contact" id="contact">
+            <div class="contact-box">
+                <h2 class="dramatic-title">Initiate Transmission</h2>
+                <p style="margin-bottom: 2rem; font-family: var(--font-mono);">+91 9920693392 | ryanrony2005@gmail.com
+                </p>
+                <form class="data-form">
+                    <div class="form-group">
+                        <label for="name">ENTITY_NAME</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">PAYLOAD</label>
+                        <textarea id="message" rows="4" required placeholder="Enter transmission data..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">[ EXECUTE ]</button>
+                </form>
+            </div>
+        </footer>
+    </main>
+
+    <div class="dead-space" style="height: 20vh;"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

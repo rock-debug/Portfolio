@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio | Ryan Rony</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="coordinate-tooltip">x: 0, y: 0</div>
+    <div class="background-grid">
+        <div class="scatter-point" style="top: 20%; left: 30%;"></div>
+        <div class="scatter-point" style="top: 45%; left: 60%; width: 12px; height: 12px; background: var(--data-red);"></div>
+        <div class="scatter-point" style="top: 70%; left: 20%;"></div>
+        <div class="scatter-point" style="top: 35%; left: 80%; width: 8px; height: 8px;"></div>
+        <div class="scatter-point" style="top: 85%; left: 75%; background: var(--data-blue);"></div>
+    </div>
+    <nav class="top-nav">
+        <div class="nav-brand">RYAN.DAT // RYAN RONY</div>
+        <div class="nav-links">
+            <a href="#about">01. OBSERVATION</a>
+            <a href="#projects">02. ANALYSIS</a>
+            <a href="#education">03. ARCHIVE</a>
+            <a href="#contact">04. CONCLUSION</a>
+        </div>
+    </nav>
+    <main class="document">
+        <header class="hero" id="about">
+            <div class="hero-content">
+                <p class="mono-label">MUMBAI, MAHARASHTRA | DATA SCIENTIST</p>
+                <h1 class="dramatic-title">Ryan Rony. <br> Finding the signal.</h1>
+                <div class="stats-grid">
+                    <div class="stat-box"><span class="stat-value">IITM</span><span class="stat-label">BSc DATA SCIENCE (7.59)</span></div>
+                    <div class="stat-box"><span class="stat-value">LPU</span><span class="stat-label">BTech CSE (9.00)</span></div>
+                    <div class="stat-box"><span class="stat-value">Core</span><span class="stat-label">ML, DL, EDA</span></div>
+                </div>
+                <div class="abstract-text">
+                    <p><strong>Abstract:</strong> I am a Data Scientist proficient in Python, R, and Java. My research focuses on Machine Learning, Deep Learning, and Statistical Modeling. I derive actionable insights from complex datasets and build predictive logic to organize chaos.</p>
+                </div>
+                <br>
+                <div class="mono-label" style="display:flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="mailto:ryanrony2005@gmail.com" class="view-link">ryanrony2005@gmail.com</a>
+                    <a href="https://linkedin.com/in/ryanrony" class="view-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/rock-debug" class="view-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 2. EMPIRICAL EVIDENCE (Projects)</div>
+            <div class="line"></div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="project-card">
+                <div class="project-graph blue-graph">
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 90%; background: var(--data-red);"></div>
+                    <div class="bar" style="height: 60%"></div>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">NBA Player Analytics</h2>
+                    <p class="mono-label">N=218K SHOTS | CLASSIFICATION: 12 ARCHETYPES</p>
+                    <p class="project-desc">Developed a full-stack platform analyzing 218K+ shots via K-Means clustering and statistical modeling. Built with Python, Next.js, TypeScript, and SQL to classify 994 players into archetypes for responsive real-time analytics.</p>
+                    <a href="https://github.com/rock-debug" class="view-link">[ VIEW GITHUB ]</a>
+                </div>
+            </div>
+            <div class="project-card reverse">
+                <div class="project-info">
+                    <h2 class="project-title">AI-Based Journal Tracker</h2>
+                    <p class="mono-label">100+ PAPERS | NLP & CITATION TRACKING</p>
+                    <p class="project-desc">Engineered an AI-based research management system leveraging NLP classification, summarization, and similarity ranking. Automated the organization and citation tracking of over 100 papers, immensely improving literature review efficiency.</p>
+                    <a href="https://github.com/rock-debug" class="view-link">[ VIEW GITHUB ]</a>
+                </div>
+                <div class="project-graph red-graph">
+                    <svg viewBox="0 0 100 50" class="line-chart">
+                        <polyline fill="none" stroke="var(--data-blue)" stroke-width="2" points="0,40 20,35 40,45 60,20 80,25 100,5" />
+                        <circle cx="100" cy="5" r="3" fill="var(--data-red)" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-divider" id="education">
+            <div class="line"></div>
+            <div class="section-label">FIG 3. ACADEMIC ARCHIVE & SKILLSET</div>
+            <div class="line"></div>
+        </section>
+        
+        <section class="projects" style="gap: 3rem;">
+            <div class="abstract-text" style="max-width: 100%;">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Education Matrix</h3>
+                <ul style="list-style: none; font-family: var(--font-mono); font-size: 0.9rem; line-height: 2;">
+                    <li><strong>BTech CSE</strong>, Lovely Professional University (2023 - Present) | CGPA: 9.00</li>
+                    <li><strong>BSc Data Science & CSE</strong>, IIT Madras (2023 - Present) | CGPA: 7.59</li>
+                    <li><strong>12th Grade</strong>, Arya Gurukul Junior College (2023) | 66.0%</li>
+                    <li><strong>10th Grade</strong>, Smt Sulochanadevi Singhania School (2021) | 94.60%</li>
+                </ul>
+            </div>
+            
+            <div class="abstract-text" style="max-width: 100%; border-left-color: var(--data-blue);">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Technical Lexicon</h3>
+                <p style="font-family: var(--font-mono); font-size: 0.9rem; line-height: 1.8;">
+                    <strong>LANGUAGES:</strong> C++, Python, R, Java<br>
+                    <strong>FRAMEWORKS:</strong> NumPy, Pandas, Scikit-learn, TensorFlow<br>
+                    <strong>DOMAIN EXPERTISE:</strong> DSA, Machine Learning, Deep Learning, Statistical Modeling, EDA
+                </p>
+            </div>
+            
+            <div class="abstract-text" style="max-width: 100%; border-left-color: var(--text-muted);">
+                <h3 class="dramatic-title" style="font-size: 2rem; margin-bottom: 1rem;">Certifications & Training</h3>
+                <ul style="list-style: none; font-family: var(--font-mono); font-size: 0.9rem; line-height: 1.8;">
+                    <li><strong>LPU PETV51 Summer Training</strong> (Jul 2025): Developed EduPulse analytics system using Java, Swing, JSON.</li>
+                    <li><strong>CSE Pathshala AI/ML</strong> (Mar 2024): 25-hour live training in ML workflows with Pandas & Scikit-learn.</li>
+                    <li><strong>Coursera:</strong> Network Communications (Sep 2024)</li>
+                    <li><strong>IITM:</strong> CODE foundation level (Aug 2024)</li>
+                    <li><strong>Udemy:</strong> Data Mining with R (Feb 2024)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-divider">
+            <div class="line"></div>
+            <div class="section-label">FIG 4. PING PROTOCOL</div>
+            <div class="line"></div>
+        </section>
+
+        <footer class="contact" id="contact">
+            <div class="contact-box">
+                <h2 class="dramatic-title">Initiate Transmission</h2>
+                <p style="margin-bottom: 2rem; font-family: var(--font-mono);">+91 9920693392 | ryanrony2005@gmail.com</p>
+                <form class="data-form">
+                    <div class="form-group">
+                        <label for="name">ENTITY_NAME</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">PAYLOAD</label>
+                        <textarea id="message" rows="4" required placeholder="Enter transmission data..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">[ EXECUTE ]</button>
+                </form>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

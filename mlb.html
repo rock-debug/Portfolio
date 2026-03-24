@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Analytics | 3D Trajectory</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mlb.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-link">&larr; RETURN TO INDEX</a>
+
+    <!-- Fixed 3D Dataviz Layer -->
+    <div class="fixed-dataviz">
+        <div class="scene3d-container">
+            <div class="scene3d" id="scene3d">
+                <!-- Ground Layers -->
+                <div class="grass"></div>
+                <div class="dirt"></div>
+
+                <!-- Bases (Home is 0,0) -->
+                <div class="base home"></div>
+                <div class="base first"></div>
+                <div class="base second"></div>
+                <div class="base third"></div>
+
+                <!-- Pitcher's Mound -->
+                <div class="mound"></div>
+
+                <div class="batter-box left"></div>
+                <div class="batter-box right"></div>
+
+                <!-- Outfield Fences -->
+                <div class="batter-box left"></div>
+                <div class="batter-box right"></div>
+
+                <!-- Foul Line Walls (Glassy) -->
+                <div class="foul-wall first-base-wall"></div>
+                <div class="foul-wall third-base-wall"></div>
+
+                <!-- Outfield Walls (Solid Green) -->
+                <div class="outfield-wall lf-wall"></div>
+                <div class="outfield-wall rf-wall"></div>
+
+                <!-- Floating Hologram Stats -->
+                <div class="homerun-sign">
+                    ADDISON BARGER<br>
+                    <span style="color:var(--data-red); font-size: 24px;">HR &bull; 106.2 MPH &bull; 413 FT</span>
+                </div>
+
+                <!-- 3D Sprite Models -->
+                <div class="player-billboard pitcher" id="pitcher-model"></div>
+                <div class="player-billboard batter" id="batter-model"></div>
+
+                <!-- The Baseball and Shadow -->
+                <div class="ball-shadow" id="ball-shadow"></div>
+                <div class="ball3d" id="ball3d"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Scrolling Narrative -->
+    <div class="scroll-narrative">
+        <div class="scroll-spacer" style="height: 50vh;"></div>
+
+        <section class="step" id="step-0">
+            <h1 class="dramatic-title">The Pitch.</h1>
+            <p class="mono-label">PITCH COMPLETION | PYBASEBALL PIPELINE</p>
+            <div class="abstract-text">
+                <p>Before a home run can be modeled, the data must be captured.</p>
+                <p>I built an automated Python data pipeline using <code>pybaseball</code> to extract every pitch of the
+                    2025 MLB season. The dataset was cleaned, trimmed to remove anomalies, and structured for maximum
+                    indexing performance under Power BI limits.</p>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 100vh;"></div>
+
+        <section class="step right-align" id="step-1">
+            <h2 class="dramatic-title">The Contact.</h2>
+            <p class="mono-label">STAR SCHEMA | POWER BI DATA MODEL</p>
+            <div class="abstract-text">
+                <p>A flawless swing requires perfect alignment—the exact premise of a robust Star Schema.</p>
+                <p>I engineered a deeply relational model centered around a <code>FactPitch</code> table, logging
+                    exactly one row per physical pitch thrown.</p>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 150vh;"></div>
+
+        <section class="step" id="step-2">
+            <h2 class="dramatic-title">The Apex.</h2>
+            <p class="mono-label">ADVANCED DAX MEASURES</p>
+            <div class="abstract-text">
+                <p>At the peak curve of analysis, raw numbers give way to expected metrics (xMetrics).</p>
+                <p>I authored advanced DAX logic to calculate confrontation expectations and granular batter vs pitcher
+                    performance, shifting the narrative from "what happened" to "what should have happened."</p>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 150vh;"></div>
+
+        <section class="step right-align" id="step-3">
+            <h2 class="dramatic-title">The Landing.</h2>
+            <p class="mono-label">INTERACTIVE DASHBOARDS</p>
+            <div class="abstract-text">
+                <p>The ball lands. The data becomes actionable insight for coaches and scouts.</p>
+                <p>The final Power BI dashboards deliver total visibility into opponent operations. From granular Zone
+                    Heatmaps to velocity trend forecasting.</p>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 100vh;"></div>
+
+        <section class="step center-align" id="step-4">
+            <h2 class="dramatic-title">Next Steps.</h2>
+            <p class="mono-label">PREDICTIVE EVALUATION | CONTACT</p>
+            <div class="abstract-text" style="display:inline-block; max-width: 600px; text-align:left;">
+                <p>I’m constantly iterating my pipeline—experimenting with machine-learning models to better forecast
+                    xRV and player endurance over a 162-game stretch.</p>
+                <p>If you work in sports analytics, BI engineering, or baseball data, let's talk mechanics.</p>
+                <br>
+                <div style="display:flex; justify-content: center;">
+                    <a href="https://drive.google.com/drive/folders/1_nlkNi6OcwzbCJUeGAkWkjt3hw_GUDFU?usp=drive_link"
+                        class="view-link" target="_blank">[ VIEW PROJECT FILES ]</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-spacer" style="height: 50vh;"></div>
+    </div>
+
+    <script src="mlb.js"></script>
+</body>
+
+</html>
