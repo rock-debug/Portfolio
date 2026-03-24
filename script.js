@@ -208,6 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Certification Flip Boxes
+    const certCards = document.querySelectorAll('.cert-card');
+    certCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Do not flip if the link button was clicked
+            if (!e.target.classList.contains('cert-btn')) {
+                card.classList.toggle('flipped');
+            }
+        });
+    });
+
     // 5. Scroll-reveal for project cards
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry, i) => {

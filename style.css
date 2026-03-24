@@ -753,6 +753,113 @@ body {
     padding-bottom: 0.5rem;
 }
 
+/* ── Certification Flip Boxes ── */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.cert-card {
+    height: 180px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.cert-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.cert-card.flipped .cert-card-inner {
+    transform: rotateY(180deg);
+}
+
+.cert-card-front, .cert-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 1rem;
+}
+
+.cert-card:hover .cert-card-front {
+    border-color: var(--data-red);
+    box-shadow: 6px 6px 0 var(--border-color);
+}
+
+.cert-card-front img.cert-img {
+    max-width: 100%;
+    max-height: 65%;
+    object-fit: contain;
+    margin-bottom: auto;
+    filter: grayscale(0.6) sepia(0.2) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+.cert-card:hover .cert-card-front img.cert-img {
+    filter: grayscale(0) sepia(0) contrast(1);
+}
+
+.cert-card-front .cert-btn {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    background: var(--text-main);
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: auto;
+    width: 100%;
+}
+
+.cert-card-front .cert-btn:hover {
+    background: var(--data-red);
+}
+
+.cert-card-back {
+    background: #2b1a0f;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: var(--font-mono);
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cert-card-back h4 {
+    color: var(--data-red);
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.cert-card-back p {
+    font-size: 0.85rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
 /* ── Coding Arena Section ── */
 .coding-arena {
     display: grid;
