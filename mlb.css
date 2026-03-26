@@ -82,14 +82,14 @@ body {
     width: 60px; height: 90px;
     border: 2px solid rgba(255,255,255,0.2);
     border-radius: 4px;
-    background-image: url("pitch1.png"); /* Start frame */
+    background-image: url("images/pitch1.png"); /* Start frame */
 }
 .batter {
     left: 0px; top: 0px;
     width: 60px; height: 90px;
     border: 2px solid rgba(255,255,255,0.2);
     border-radius: 4px;
-    background-image: url("bat1.png"); /* Start frame */
+    background-image: url("images/bat1.png"); /* Start frame */
 }
 
 /* The Baseball 3D Layer */

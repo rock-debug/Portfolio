@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let bx = 0, by = 0, bz = 0;
         let camZ = -135, camX = 85, scale = 1.2;
         let batterX = 0, batterY = 0;
-        let batterImage = 'bat1.png';
+        let batterImage = 'images/bat1.png';
         
         // 0.0 - 0.25: The Windup & Pitch (Mound to Home)
         if (progress <= 0.25) {
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             scale = 1.2 + (0.4 * p); // Zoom in dramatically as the pitch arrives
             
             let frameIdx = Math.min(Math.floor(p * 5) + 1, 5);
-            pitcher.style.backgroundImage = `url('pitch${frameIdx}.png')`;
-            batterImage = `bat1.png`;
+            pitcher.style.backgroundImage = `url('images/pitch${frameIdx}.png')`;
+            batterImage = `images/bat1.png`;
         }
         // 0.25 - 0.70: The Contact & Flight (Home to Deep Center Field)
         else if (progress <= 0.70) {
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
             camX = 78 - (p * 28); // Smoothly tilt up from 78 down to an aerial 50 degree view
             scale = 1.6 - (0.8 * p); // Compensating for the added zoom in the first phase
             
-            pitcher.style.backgroundImage = `url('pitch5.png')`; 
+            pitcher.style.backgroundImage = `url('images/pitch5.png')`; 
             
             let batP = Math.min(p / 0.15, 1); 
             if (batP < 1) {
                 let batFrameIdx = Math.min(Math.floor(batP * 4) + 1, 4);
-                batterImage = `bat${batFrameIdx}.png`;
+                batterImage = `images/bat${batFrameIdx}.png`;
             } else {
-                batterImage = `bat5.png`;
+                batterImage = `images/bat5.png`;
             }
         }
         // 0.70 - 1.0: Scoreboard Display (Center Field)
@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             camX = 50 + (p * 35); 
             scale = 0.8 + (p * 2.0); 
             
-            pitcher.style.backgroundImage = `url('pitch5.png')`;
-            batterImage = `bat5.png`;
+            pitcher.style.backgroundImage = `url('images/pitch5.png')`;
+            batterImage = `images/bat5.png`;
         }
 
         // Apply Batter Base Trot
