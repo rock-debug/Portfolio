@@ -293,4 +293,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     statValues.forEach(el => counterObserver.observe(el));
 
+    // 8. Fetch Live Coding Stats
+    fetch('coding_stats.json')
+        .then(response => response.json())
+        .then(data => {
+            if (data.leetcode && !data.leetcode.error) {
+                const lc = data.leetcode;
+                if(document.getElementById('lc-total')) document.getElementById('lc-total').textContent = lc.total;
+                if(document.getElementById('lc-easy')) document.getElementById('lc-easy').textContent = lc.easy;
+                if(document.getElementById('lc-medium')) document.getElementById('lc-medium').textContent = lc.medium;
+                if(document.getElementById('lc-hard')) document.getElementById('lc-hard').textContent = lc.hard;
+                if(document.getElementById('lc-rank')) document.getElementById('lc-rank').textContent = lc.ranking;
+            }
+            if (data.geeksforgeeks && !data.geeksforgeeks.error) {
+                const gfg = data.geeksforgeeks;
+                if(document.getElementById('gfg-total')) document.getElementById('gfg-total').textContent = gfg.total_problems_solved || document.getElementById('gfg-total').textContent;
+                if(document.getElementById('gfg-score')) document.getElementById('gfg-score').textContent = gfg.score || document.getElementById('gfg-score').textContent;
+                if(document.getElementById('gfg-rank')) document.getElementById('gfg-rank').textContent = gfg.institute_rank || document.getElementById('gfg-rank').textContent;
+            }
+            if (data.hackerrank && !data.hackerrank.error) {
+                const badges = data.hackerrank.badges || {};
+                const safeSet = (id, badgeName) => { const el = document.getElementById(id); if(el && badges[badgeName]) el.textContent = badges[badgeName]; };
+                safeSet('hr-ps', 'Problem Solving'); safeSet('hr-py', 'Python'); safeSet('hr-sql', 'Sql'); safeSet('hr-c', 'C');
+                const pyRaw = badges['Python_raw'] || 4; const psRaw = badges['Problem Solving_raw'] || 3;
+                if(document.getElementById('hr-ft-1')) document.getElementById('hr-ft-1').innerHTML = `⚡ ${pyRaw}★ Python Track`;
+                if(document.getElementById('hr-ft-2')) document.getElementById('hr-ft-2').innerHTML = `🧩 ${psRaw}★ Problem Solving`;
+            }
+        })
+        .catch(err => console.error(err));
+
 });

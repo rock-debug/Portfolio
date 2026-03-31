@@ -1,0 +1,33 @@
+{
+  "leetcode": {
+    "total": 176,
+    "easy": 105,
+    "medium": 68,
+    "hard": 3,
+    "ranking": 865854
+  },
+  "geeksforgeeks": {
+    "html_snippet": "\\\"stylesheet\\\",\\\"href\\\":\\\"https://assets.geeksforgeeks.org/connect-prod/_next/static/css/3efa4971c5dd7282.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],\\\"$L2\\\"]}],{\\\"children\\\":[\\\"profile\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"username\\\",\\\"rockdebug\\\",\\\"d\\\"],[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,\\\"$L5\\\"]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L6\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"https://assets.geeksforgeeks.org/connect-prod/_next/static/css/9f82ccfdb28e7853.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\""
+  },
+  "hackerrank": {
+    "total_stars": 9,
+    "badges": [
+      {
+        "name": "Problem Solving",
+        "stars": 3
+      },
+      {
+        "name": "Python",
+        "stars": 4
+      },
+      {
+        "name": "Sql",
+        "stars": 1
+      },
+      {
+        "name": "C",
+        "stars": 1
+      }
+    ]
+  }
+}
